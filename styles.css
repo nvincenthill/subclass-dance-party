@@ -1,7 +1,9 @@
 body,
 html {
-  height: 100%;
-  background-image: url("./src/wallpaper.jpg");
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.25), 
+      rgba(255, 255, 255, 0.85)
+    ), url("./src/wallpaper.jpg");
 }
 
 body {
@@ -15,7 +17,8 @@ body {
 }
 
 .header-button-randomdancer {
-  font-family: "Rubik", sans-serif;
+  opacity: .85;
+  font-family: "Roboto", sans-serif;
   grid-column-start: first;
   grid-column-end: second;
   grid-row-start: second;
@@ -24,7 +27,8 @@ body {
 }
 
 .header-button-lineup {
-  font-family: "Rubik", sans-serif;
+  opacity: .85;
+  font-family: "Roboto", sans-serif;
   grid-column-start: second;
   grid-column-end: third;
   grid-row-start: second;
@@ -33,7 +37,8 @@ body {
 }
 
 .header-button-randomprogram {
-  font-family: "Rubik", sans-serif;
+  opacity: .85;
+  font-family: "Roboto", sans-serif;
   grid-column-start: third;
   grid-column-end: fourth;
   grid-row-start: second;
@@ -42,7 +47,8 @@ body {
 }
 
 .header-button-randomlanguage {
-  font-family: "Rubik", sans-serif;
+  opacity: .85;
+  font-family: "Roboto", sans-serif;
   grid-column-start: fourth;
   grid-column-end: fifth;
   grid-row-start: second;
@@ -51,7 +57,8 @@ body {
 }
 
 .header-button-randomcompany {
-  font-family: "Rubik", sans-serif;
+  opacity: .85;
+  font-family: "Roboto", sans-serif;
   grid-column-start: fifth;
   grid-column-end: end;
   grid-row-start: second;
@@ -60,7 +67,8 @@ body {
 }
 
 .header-button-addall {
-  font-family: "Rubik", sans-serif;
+  opacity: .85;
+  font-family: "Roboto", sans-serif;
   grid-column-start: first;
   grid-column-end: second;
   grid-row-start: first;
@@ -69,7 +77,8 @@ body {
 }
 
 .header-button-clearall {
-  font-family: "Rubik", sans-serif;
+  opacity: .85;
+  font-family: "Roboto", sans-serif;
   grid-column-start: fifth;
   grid-column-end: end;
   grid-row-start: first;
@@ -79,10 +88,11 @@ body {
 
 .header {
   display: grid;
-  /* background-color: #222; */
+  /*background-color: #222;*/
+  
   color: #eee;
   grid-template-columns: [first] 1fr [second] 1fr [third] 1fr [fourth] 1fr [fifth] 1fr [end];
-  grid-template-rows: [first] 6vmax [second] 6vmax [end];
+  grid-template-rows: [first] 5rem [second] 5rem [end];
   justify-content: center;
   align-items: center;
   padding: 0.5rem;
@@ -90,7 +100,9 @@ body {
 }
 .title {
   font-family: "Roboto", sans-serif;
-  font-size: 5vmin;
+  letter-spacing: 3px;
+  font-size: 3vmax;
+  font-weight: bold;
   grid-column-start: second;
   grid-column-end: fifth;
   grid-row-start: first;
@@ -214,10 +226,11 @@ a {
 }
 
 a {
-  transition: 0.25 ease-in-out;
+  transition: 0.5 ease-in-out;
 }
 
 a:hover {
   transform: scale(1.35);
-  transition: 0.5s cubic-bezier(0.34, 1.53, 0.8, 0.82);
+  transition: 0.25s cubic-bezier(0.34, 1.53, 0.8, 0.82);
+  color: lightblue;
 }

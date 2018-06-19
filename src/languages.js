@@ -40,20 +40,6 @@ let Csharp = function(top, left, timeBetweenSteps) {
 Csharp.prototype = Object.create(Language.prototype);
 Csharp.prototype.constructor = Csharp;
 
-let C = function(top, left, timeBetweenSteps) {
-  Language.apply(this, arguments);
-  this.iconPath = data.C;
-  this.name = 'c';
-  console.log(this);
-  this.$node = $(this.iconPath);
-  
-  this.setPosition(this.top, this.left);
-
-};
-
-C.prototype = Object.create(Language.prototype);
-C.prototype.constructor = C;
-
 let Cplusplus = function(top, left, timeBetweenSteps) {
   Language.apply(this, arguments);
   this.iconPath = data.cplusplus;
