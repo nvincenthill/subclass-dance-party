@@ -98,14 +98,111 @@ a {
     font-size: 2vmin;
 }
 
-.program path{
-  fill: #fa5c18;
+.program {
+  /*fill: orange;*/
 }
 
-.langauge path{
-  fill: #ffd881;
+.langauge {
+  /*fill: yellow;*/
 }
 
-.company path{
+.company {
+  /*fill: lightgreen;*/
+}
+
+#apple path{
+  fill: white;
+}
+
+#javascript path{
+  fill: yellow;
+}
+
+#css path{
+  fill: #00A5DB;
+}
+
+#visualstudios path{
+  fill: #007CC8;
+}
+
+#atom path{
   fill: lightgreen;
 }
+
+#github path{
+  fill: darkgrey;
+}
+
+#firefox path{
+  fill: #E38937;
+}
+
+#facebook path{
+  fill: #395E98;
+}
+
+#amazonwebservices path{
+  fill: #FC8A2B;
+}
+
+#chrome path{
+  fill: #F73126;
+}
+
+#twitter path{
+  fill: #00A3EE;
+}
+
+#slack path{
+  fill: #E60A59;
+}
+
+#ruby path{
+  fill: #AB0A0A;
+}
+
+#python path{
+  fill: #FFC843;
+}
+
+#php path{
+  fill: #636B9E;
+}
+
+#node path{
+  fill: #81BD2F;
+}
+
+#explorer path{
+  fill: #0CA7DF;
+}
+
+#cplusplus path{
+  fill: #005B99;
+}
+
+#c path{
+  fill: #000B7D;
+}
+
+#csharp path{
+  fill: #350D90;
+}
+
+#angular path{
+  fill: #E30033;
+}  
+
+
+
+
+
+
+
+
+
+
+
+
+

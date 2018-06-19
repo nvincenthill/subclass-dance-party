@@ -54,3 +54,30 @@ let Firefox = function(top, left, timeBetweenSteps) {
 Firefox.prototype = Object.create(Company.prototype);
 Firefox.prototype.constructor = Firefox;
 
+let Slack = function(top, left, timeBetweenSteps) {
+  Company.apply(this, arguments);
+  this.iconPath = data.slack;
+  this.name = 'Slack';
+  console.log(this);
+  this.$node = $(this.iconPath);
+  
+  this.setPosition(this.top, this.left);
+
+};
+
+Slack.prototype = Object.create(Company.prototype);
+Slack.prototype.constructor = Slack;
+
+let Twitter = function(top, left, timeBetweenSteps) {
+  Company.apply(this, arguments);
+  this.iconPath = data.twitter;
+  this.name = 'Twitter';
+  console.log(this);
+  this.$node = $(this.iconPath);
+  
+  this.setPosition(this.top, this.left);
+
+};
+
+Twitter.prototype = Object.create(Company.prototype);
+Twitter.prototype.constructor = Twitter;

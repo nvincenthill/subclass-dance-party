@@ -1,8 +1,8 @@
 $(document).ready(function() {
   window.dancers = [];
-  let programs = [Atom, VisualStudios];
-  let languages = [JavaScript, CSS];
-  let companies = [Apple, Facebook, Github, Firefox];
+  let programs = [Atom, VisualStudios, Amazonwebservices, Angular, Explorer, Node, Chrome];
+  let languages = [JavaScript, CSS, Csharp, C, Cplusplus, Php, Python, Ruby];
+  let companies = [Apple, Facebook, Github, Firefox, Slack, Twitter];
   let constructors = [];
   for (let i = 0; i < programs.length; i++) {
     constructors.push(programs[i]);
