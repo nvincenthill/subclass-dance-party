@@ -2,25 +2,83 @@ body, html{
   height:100%;
   background-image: url("./src/wallpaper.jpg");
 }
+
 body{
   margin: 0px;
   background-color:#444;
   font-size: 18px;
 }
-body, a:link, a:visited, a:active{
-  color: lightblue;
+
+.dancefloor {
+  min-height: 90vh;
 }
-.title, .addDancerButton{
-  padding:5px 12px;
-  float:right;
+
+.header-button-randomdancer {
+  font-family: 'Rubik', sans-serif;
+  grid-column-start: first;
+  grid-column-end: second;
+  grid-row-start: second;
+  grid-row-end: second;
+  text-align: center;
 }
-.topbar{
-  height:32px;
-  background-color: #555;
+
+.header-button-lineup {
+  font-family: 'Rubik', sans-serif;
+  grid-column-start: second;
+  grid-column-end: third;
+  grid-row-start: second;
+  grid-row-end: second;
+  text-align: center;
+}
+
+.header-button-randomprogram {
+  font-family: 'Rubik', sans-serif;
+  grid-column-start: third;
+  grid-column-end: fourth;
+  grid-row-start: second;
+  grid-row-end: second;
+  text-align: center;
+}
+
+.header-button-randomlanguage {
+  font-family: 'Rubik', sans-serif;
+  grid-column-start: fourth;
+  grid-column-end: fifth;
+  grid-row-start: second;
+  grid-row-end: second;
+  text-align: center;
+}
+
+.header-button-randomcompany {
+  font-family: 'Rubik', sans-serif;
+  grid-column-start: fifth;
+  grid-column-end: end;
+  grid-row-start: second;
+  grid-row-end: second;
+  text-align: center;
+}
+
+.header{
+  display: grid;
+  background-color: #222;
+  color: #eee;
+  grid-template-columns: [first] 1fr [second] 1fr [third] 1fr [fourth] 1fr [fifth] 1fr [end];
+  grid-template-rows: [first] 6vmax [second] 6vmax [end];
+  justify-content: center;
+  align-items: center;
+  padding: .5rem;
+  text-decoration: none !important;
 }
 .title{
-  background-color: #777;
+  font-family: 'Roboto', sans-serif;
+  font-size: 5vmin;
+  grid-column-start: first;
+  grid-column-end: end;
+  grid-row-start: first;
+  grid-row-end: first;
+  text-align: center;
 }
+
 .dancer{
   position:absolute;
 }
@@ -32,4 +90,22 @@ body, a:link, a:visited, a:active{
 /* if you want to change the original color */
 .devicon-git-plain path {
   fill: white;
+}
+
+a {
+  text-decoration: none !important;
+  color: #eee;
+    font-size: 2vmin;
+}
+
+.program path{
+  fill: #fa5c18;
+}
+
+.langauge path{
+  fill: #ffd881;
+}
+
+.company path{
+  fill: lightgreen;
 }

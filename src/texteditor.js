@@ -1,7 +1,7 @@
-console.log('This is a TextEditor');
-
 let TextEditor = function(top, left, timeBetweenSteps) {
-  Program.call(this);
+  Program.apply(this, arguments);
+  // this.top = top;
+  // this.left = left;
 };
 
 TextEditor.prototype.step = function() {

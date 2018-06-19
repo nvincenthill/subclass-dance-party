@@ -1,7 +1,7 @@
-console.log('This is a program');
-
 let Program = function(top, left, timeBetweenSteps) {
-  Dancer.call(this);
+  Dancer.apply(this, arguments);
+  // this.top = top;
+  // this.left = left;
 };
 
 Program.prototype.step = function() {
