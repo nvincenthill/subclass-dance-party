@@ -1,6 +1,14 @@
 $(document).ready(function() {
   window.dancers = [];
-  let programs = [Atom, VisualStudios, Amazonwebservices, Angular, Explorer, Node, Chrome];
+  let programs = [
+    Atom,
+    VisualStudios,
+    Amazonwebservices,
+    Angular,
+    Explorer,
+    Node,
+    Chrome
+  ];
   let languages = [JavaScript, CSS, Csharp, C, Cplusplus, Php, Python, Ruby];
   let companies = [Apple, Facebook, Github, Firefox, Slack, Twitter];
   let constructors = [];
@@ -20,27 +28,22 @@ $(document).ready(function() {
     $('.dancefloor').append(icon.$node);
     window.dancers.push(icon);
   });
-  
   $('.header-button-randomprogram').on('click', function(event) {
     let random = Math.floor(Math.random() * programs.length);
     let icon = new programs[random]();
     $('.dancefloor').append(icon.$node);
     window.dancers.push(icon);
   });
-  
   $('.header-button-randomlanguage').on('click', function(event) {
     let random = Math.floor(Math.random() * languages.length);
     let icon = new languages[random]();
     $('.dancefloor').append(icon.$node);
     window.dancers.push(icon);
   });
-  
   $('.header-button-randomcompany').on('click', function(event) {
     let random = Math.floor(Math.random() * companies.length);
     let icon = new companies[random]();
     $('.dancefloor').append(icon.$node);
     window.dancers.push(icon);
   });
-  
 });
-

@@ -1,11 +1,12 @@
-body, html{
-  height:100%;
+body,
+html {
+  height: 100%;
   background-image: url("./src/wallpaper.jpg");
 }
 
-body{
+body {
   margin: 0px;
-  background-color:#444;
+  background-color: #444;
   font-size: 18px;
 }
 
@@ -14,7 +15,7 @@ body{
 }
 
 .header-button-randomdancer {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   grid-column-start: first;
   grid-column-end: second;
   grid-row-start: second;
@@ -23,7 +24,7 @@ body{
 }
 
 .header-button-lineup {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   grid-column-start: second;
   grid-column-end: third;
   grid-row-start: second;
@@ -32,7 +33,7 @@ body{
 }
 
 .header-button-randomprogram {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   grid-column-start: third;
   grid-column-end: fourth;
   grid-row-start: second;
@@ -41,7 +42,7 @@ body{
 }
 
 .header-button-randomlanguage {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   grid-column-start: fourth;
   grid-column-end: fifth;
   grid-row-start: second;
@@ -50,7 +51,7 @@ body{
 }
 
 .header-button-randomcompany {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   grid-column-start: fifth;
   grid-column-end: end;
   grid-row-start: second;
@@ -58,29 +59,47 @@ body{
   text-align: center;
 }
 
-.header{
-  display: grid;
-  background-color: #222;
-  color: #eee;
-  grid-template-columns: [first] 1fr [second] 1fr [third] 1fr [fourth] 1fr [fifth] 1fr [end];
-  grid-template-rows: [first] 6vmax [second] 6vmax [end];
-  justify-content: center;
-  align-items: center;
-  padding: .5rem;
-  text-decoration: none !important;
-}
-.title{
-  font-family: 'Roboto', sans-serif;
-  font-size: 5vmin;
+.header-button-addall {
+  font-family: "Rubik", sans-serif;
   grid-column-start: first;
+  grid-column-end: second;
+  grid-row-start: first;
+  grid-row-end: first;
+  text-align: center;
+}
+
+.header-button-clearall {
+  font-family: "Rubik", sans-serif;
+  grid-column-start: fifth;
   grid-column-end: end;
   grid-row-start: first;
   grid-row-end: first;
   text-align: center;
 }
 
-.dancer{
-  position:absolute;
+.header {
+  display: grid;
+  /* background-color: #222; */
+  color: #eee;
+  grid-template-columns: [first] 1fr [second] 1fr [third] 1fr [fourth] 1fr [fifth] 1fr [end];
+  grid-template-rows: [first] 6vmax [second] 6vmax [end];
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  text-decoration: none !important;
+}
+.title {
+  font-family: "Roboto", sans-serif;
+  font-size: 5vmin;
+  grid-column-start: second;
+  grid-column-end: fifth;
+  grid-row-start: first;
+  grid-row-end: first;
+  text-align: center;
+}
+
+.dancer {
+  position: absolute;
 }
 
 .devicon-git-plain {
@@ -95,7 +114,7 @@ body{
 a {
   text-decoration: none !important;
   color: #eee;
-    font-size: 2vmin;
+  font-size: 2vmin;
 }
 
 .program {
@@ -110,99 +129,95 @@ a {
   /*fill: lightgreen;*/
 }
 
-#apple path{
+#apple path {
   fill: white;
 }
 
-#javascript path{
+#javascript path {
   fill: yellow;
 }
 
-#css path{
-  fill: #00A5DB;
+#css path {
+  fill: #00a5db;
 }
 
-#visualstudios path{
-  fill: #007CC8;
+#visualstudios path {
+  fill: #007cc8;
 }
 
-#atom path{
+#atom path {
   fill: lightgreen;
 }
 
-#github path{
-  fill: darkgrey;
+#github path {
+  fill: black;
 }
 
-#firefox path{
-  fill: #E38937;
+#firefox path {
+  fill: #e38937;
 }
 
-#facebook path{
-  fill: #395E98;
+#facebook path {
+  fill: #395e98;
 }
 
-#amazonwebservices path{
-  fill: #FC8A2B;
+#amazonwebservices path {
+  fill: #fc8a2b;
 }
 
-#chrome path{
-  fill: #F73126;
+#chrome path {
+  fill: #f73126;
 }
 
-#twitter path{
-  fill: #00A3EE;
+#twitter path {
+  fill: #00a3ee;
 }
 
-#slack path{
-  fill: #E60A59;
+#slack path {
+  fill: #e60a59;
 }
 
-#ruby path{
-  fill: #AB0A0A;
+#ruby path {
+  fill: #ab0a0a;
 }
 
-#python path{
-  fill: #FFC843;
+#python path {
+  fill: #ffc843;
 }
 
-#php path{
-  fill: #636B9E;
+#php path {
+  fill: #636b9e;
 }
 
-#node path{
-  fill: #81BD2F;
+#node path {
+  fill: #81bd2f;
 }
 
-#explorer path{
-  fill: #0CA7DF;
+#explorer path {
+  fill: #0ca7df;
 }
 
-#cplusplus path{
-  fill: #005B99;
+#cplusplus path {
+  fill: #005b99;
 }
 
-#c path{
-  fill: #000B7D;
+#c path {
+  fill: #000b7d;
 }
 
-#csharp path{
-  fill: #350D90;
+#csharp path {
+  fill: #350d90;
 }
 
-#angular path{
-  fill: #E30033;
-}  
+#angular path {
+  fill: #e30033;
+}
 
+a {
+  transition: 0.25 ease-in-out;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+a:hover {
+  transform: scale(1.35);
+  transition: 0.5s cubic-bezier(0.34, 1.53, 0.8, 0.82);
+}
