@@ -3,9 +3,8 @@ let Program = function(top, left, timeBetweenSteps) {
   // this.top = top;
   // this.left = left;
   this.moving = false;
-  
+  this.class = 'program dancer devicon-git-plain animated zoomInDown';
   let context = this;
-  console.log(this);
   setInterval(function() { context.move(); }, 1);
   
 };

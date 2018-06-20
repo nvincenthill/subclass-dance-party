@@ -108,6 +108,8 @@ body {
   grid-row-start: first;
   grid-row-end: first;
   text-align: center;
+  color: #fff;
+  /*text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px black, 0 0 30px black, 0 0 40px black, 0 0 55px black, 0 0 75px black;*/
 }
 
 .dancer {
@@ -225,6 +227,10 @@ a {
   fill: #e30033;
 }
 
+#git path {
+  fill: red;
+}
+
 a {
   transition: 0.5 ease-in-out;
 }
@@ -234,3 +240,4 @@ a:hover {
   transition: 0.25s cubic-bezier(0.34, 1.53, 0.8, 0.82);
   color: lightblue;
 }
+

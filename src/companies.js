@@ -2,7 +2,6 @@ let Apple = function(top, left, timeBetweenSteps) {
   Company.apply(this, arguments);
   this.iconPath = data.apple;
   this.name = 'Apple';
-  console.log(this);
   this.$node = $(this.iconPath);
   
   this.setPosition(this.top, this.left);
@@ -16,7 +15,6 @@ let Facebook = function(top, left, timeBetweenSteps) {
   Company.apply(this, arguments);
   this.iconPath = data.facebook;
   this.name = 'Facebook';
-  console.log(this);
   this.$node = $(this.iconPath);
   
   this.setPosition(this.top, this.left);
@@ -30,7 +28,6 @@ let Github = function(top, left, timeBetweenSteps) {
   Company.apply(this, arguments);
   this.iconPath = data.github;
   this.name = 'Github';
-  console.log(this);
   this.$node = $(this.iconPath);
   
   this.setPosition(this.top, this.left);
@@ -44,7 +41,6 @@ let Firefox = function(top, left, timeBetweenSteps) {
   Company.apply(this, arguments);
   this.iconPath = data.firefox;
   this.name = 'Firefox';
-  console.log(this);
   this.$node = $(this.iconPath);
   
   this.setPosition(this.top, this.left);
@@ -58,7 +54,6 @@ let Slack = function(top, left, timeBetweenSteps) {
   Company.apply(this, arguments);
   this.iconPath = data.slack;
   this.name = 'Slack';
-  console.log(this);
   this.$node = $(this.iconPath);
   
   this.setPosition(this.top, this.left);
@@ -72,7 +67,6 @@ let Twitter = function(top, left, timeBetweenSteps) {
   Company.apply(this, arguments);
   this.iconPath = data.twitter;
   this.name = 'Twitter';
-  console.log(this);
   this.$node = $(this.iconPath);
   
   this.setPosition(this.top, this.left);

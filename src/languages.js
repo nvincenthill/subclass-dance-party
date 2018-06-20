@@ -2,7 +2,6 @@ let JavaScript = function(top, left, timeBetweenSteps) {
   Language.apply(this, arguments);
   this.iconPath = data.javascript;
   this.name = 'JavaScript';
-  console.log(this);
   this.$node = $(this.iconPath);
   
   this.setPosition(this.top, this.left);
@@ -16,7 +15,6 @@ let CSS = function(top, left, timeBetweenSteps) {
   Language.apply(this, arguments);
   this.iconPath = data.css;
   this.name = 'CSS';
-  console.log(this);
   this.$node = $(this.iconPath);
   
   this.setPosition(this.top, this.left);
@@ -30,7 +28,6 @@ let Csharp = function(top, left, timeBetweenSteps) {
   Language.apply(this, arguments);
   this.iconPath = data.csharp;
   this.name = 'Csharp';
-  console.log(this);
   this.$node = $(this.iconPath);
   
   this.setPosition(this.top, this.left);
@@ -44,7 +41,6 @@ let Cplusplus = function(top, left, timeBetweenSteps) {
   Language.apply(this, arguments);
   this.iconPath = data.cplusplus;
   this.name = 'Cplusplus';
-  console.log(this);
   this.$node = $(this.iconPath);
   
   this.setPosition(this.top, this.left);
@@ -58,7 +54,6 @@ let Php = function(top, left, timeBetweenSteps) {
   Language.apply(this, arguments);
   this.iconPath = data.php;
   this.name = 'Php';
-  console.log(this);
   this.$node = $(this.iconPath);
   
   this.setPosition(this.top, this.left);
@@ -72,7 +67,6 @@ let Python = function(top, left, timeBetweenSteps) {
   Language.apply(this, arguments);
   this.iconPath = data.python;
   this.name = 'Python';
-  console.log(this);
   this.$node = $(this.iconPath);
   
   this.setPosition(this.top, this.left);
@@ -86,7 +80,6 @@ let Ruby = function(top, left, timeBetweenSteps) {
   Language.apply(this, arguments);
   this.iconPath = data.ruby;
   this.name = 'Ruby';
-  console.log(this);
   this.$node = $(this.iconPath);
   
   this.setPosition(this.top, this.left);
@@ -96,3 +89,15 @@ let Ruby = function(top, left, timeBetweenSteps) {
 Ruby.prototype = Object.create(Language.prototype);
 Ruby.prototype.constructor = Ruby;
 
+let Git = function(top, left, timeBetweenSteps) {
+  Language.apply(this, arguments);
+  this.iconPath = data.git;
+  this.name = 'Git';
+  this.$node = $(this.iconPath);
+  
+  this.setPosition(this.top, this.left);
+
+};
+
+Git.prototype = Object.create(Language.prototype);
+Git.prototype.constructor = Git;

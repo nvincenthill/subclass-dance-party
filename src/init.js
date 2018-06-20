@@ -4,12 +4,11 @@ $(document).ready(function() {
     Atom,
     VisualStudios,
     Amazonwebservices,
-    Angular,
     Explorer,
     Node,
     Chrome
   ];
-  let languages = [JavaScript, CSS, Csharp, Cplusplus, Php, Python, Ruby];
+  let languages = [JavaScript, Angular, CSS, Csharp, Cplusplus, Php, Python, Ruby, Git];
   let companies = [Apple, Facebook, Github, Firefox, Slack, Twitter];
   let constructors = [];
   let viewportWidth = $(window).width();
@@ -59,7 +58,6 @@ $(document).ready(function() {
   
   // add all
   $('.header-button-addall').on('click', function(event) {
-    console.log(constructors);
     for (let i = 0; i < constructors.length; i++) {
       let icon = new constructors[i]();
       $('.dancefloor').append(icon.$node);
@@ -69,19 +67,10 @@ $(document).ready(function() {
   
   // clear all
   $('.header-button-clearall').on('click', function(event) {
-    // animate it out
-    console.log($('.dancer'));
-    // for (let i = 0; i < $('.dancer').length; i++) {
-    //   $('.dancer')[i].$node.addClass('animated zoomOutTop');
-    // }
-    
     dancers.forEach((dancer) => {
-      $(dancer.$node).addClass('zoomOutTop');
+      dancer.$node.attr('class', 'dancer devicon-git-plain animated zoomOut');
     });
-    
-    // remove it from dom after one second
-    // setTimeout(function() { $('.dancer').remove(); }, 1000);
-    
+    setTimeout(function() { $('.dancer').remove(); }, 1000);
     window.dancers = [];
   });
   
@@ -89,18 +78,25 @@ $(document).ready(function() {
   $('.header-button-lineup').on('click', function(event) {
     let startLeft = 50;
     let startTop = 175;
+
     dancers.forEach((dancer) => {
       $(dancer.$node).animate({
         left: `${startLeft}`,
         top: `${startTop}`
       }, 1000, dancers.toggleMotion);
       startLeft += 125;
-      if (startLeft > viewportWidth - 100) {
-        startTop += 125;
+      if (startLeft > viewportWidth - 150) {
+        startTop += 150;
         startLeft = 50;
       }
     });
   });
   
-  
+  // on click effects
+  $(document).on('click', '.dancer', function(event) {
+    $(this).removeClass('bounce');
+    $(this).removeClass('rubberBand');
+    $(this).removeClass('jello');
+    $(this).addClass('flash');
+  });
 });
