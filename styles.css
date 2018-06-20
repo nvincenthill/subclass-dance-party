@@ -19,8 +19,8 @@ body {
 .header-button-randomdancer {
   opacity: .85;
   font-family: "Roboto", sans-serif;
-  grid-column-start: first;
-  grid-column-end: second;
+  grid-column-start: second;
+  grid-column-end: third;
   grid-row-start: second;
   grid-row-end: second;
   text-align: center;
@@ -29,8 +29,8 @@ body {
 .header-button-lineup {
   opacity: .85;
   font-family: "Roboto", sans-serif;
-  grid-column-start: second;
-  grid-column-end: third;
+  grid-column-start: first;
+  grid-column-end: second;
   grid-row-start: second;
   grid-row-end: second;
   text-align: center;
@@ -60,7 +60,7 @@ body {
   opacity: .85;
   font-family: "Roboto", sans-serif;
   grid-column-start: fifth;
-  grid-column-end: end;
+  grid-column-end: sixth;
   grid-row-start: second;
   grid-row-end: second;
   text-align: center;
@@ -68,6 +68,7 @@ body {
 
 .header-button-addall {
   opacity: .85;
+  font-size: 2em;
   font-family: "Roboto", sans-serif;
   grid-column-start: first;
   grid-column-end: second;
@@ -78,20 +79,33 @@ body {
 
 .header-button-clearall {
   opacity: .85;
+  font-size: 2em;
   font-family: "Roboto", sans-serif;
-  grid-column-start: fifth;
+  grid-column-start: sixth;
   grid-column-end: end;
   grid-row-start: first;
   grid-row-end: first;
   text-align: center;
 }
 
+.header-button-partymode {
+  opacity: .85;
+  font-family: "Roboto", sans-serif;
+  grid-column-start: sixth;
+  grid-column-end: end;
+  grid-row-start: second;
+  grid-row-end: second;
+  text-align: center;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px red, 0 0 75px #ff0080;
+}
+
+
 .header {
   display: grid;
-  /*background-color: #222;*/
+  background-color: #222;
   
   color: #eee;
-  grid-template-columns: [first] 1fr [second] 1fr [third] 1fr [fourth] 1fr [fifth] 1fr [end];
+  grid-template-columns: [first] 1fr [second] 1fr [third] 1fr [fourth] 1fr [fifth] 1fr [sixth] 1fr [end];
   grid-template-rows: [first] 5rem [second] 5rem [end];
   justify-content: center;
   align-items: center;
@@ -104,12 +118,11 @@ body {
   font-size: 3vmax;
   font-weight: bold;
   grid-column-start: second;
-  grid-column-end: fifth;
+  grid-column-end: sixth;
   grid-row-start: first;
   grid-row-end: first;
   text-align: center;
   color: #fff;
-  /*text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px black, 0 0 30px black, 0 0 40px black, 0 0 55px black, 0 0 75px black;*/
 }
 
 .dancer {
@@ -238,6 +251,6 @@ a {
 a:hover {
   transform: scale(1.35);
   transition: 0.25s cubic-bezier(0.34, 1.53, 0.8, 0.82);
-  color: lightblue;
+  color: white;
 }
 

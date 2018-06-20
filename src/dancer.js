@@ -25,7 +25,7 @@ let Dancer = function() {
 // };
 
 Dancer.prototype.setPosition = function(top, left) {
-  var styleSettings = {
+  let styleSettings = {
     top: top,
     left: left
   };
@@ -36,7 +36,7 @@ Dancer.prototype.move = function() {
   if (this.moving) {
     this.top = this.top + 1;
     this.left = this.left + 1;
-    var styleSettings = {
+    let styleSettings = {
       top: this.top,
       left: this.left
     };

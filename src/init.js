@@ -13,6 +13,7 @@ $(document).ready(function() {
   let constructors = [];
   let viewportWidth = $(window).width();
   let viewportHeight = $(window).height();
+  
   for (let i = 0; i < programs.length; i++) {
     constructors.push(programs[i]);
   }
@@ -77,7 +78,7 @@ $(document).ready(function() {
   // set the lineup
   $('.header-button-lineup').on('click', function(event) {
     let startLeft = 50;
-    let startTop = 175;
+    let startTop = viewportHeight * .2;
 
     dancers.forEach((dancer) => {
       $(dancer.$node).animate({
@@ -98,5 +99,24 @@ $(document).ready(function() {
     $(this).removeClass('rubberBand');
     $(this).removeClass('jello');
     $(this).addClass('flash');
+  });
+  
+  // party mode
+  $('.header-button-partymode').on('click', function(event) {
+    let consent = prompt('Are you sure? Seizure warning procede at your own risk! (Yes/No)');
+    if (consent === 'yes' || consent === 'Yes') {
+      let cycle = setInterval(() => { 
+      
+        styleDancefloor();
+      }, 50);
+    
+      $('.title').css('text-shadow', '0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px red, 0 0 75px #ff0080');
+      setTimeout(() => { 
+        clearInterval(cycle), 15000;
+        let styleSettings = { background: 'none' };
+        $('.dancefloor').css(styleSettings);
+        $('.title').css('text-shadow', 'none');
+      }, 15000);
+    }
   });
 });
